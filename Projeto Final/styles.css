@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+
+:root {
+    --laranja-claro: #000000;
+    --alto-contraste-fundo: #000000;
+    --alto-contraste-texto: #ffffff;
+    --alto-contraste-link: #ffffff;
+}
+/* Seleciona as cores em seus respectivos nomes/variáveis */
+
+body {
+    font-size: 1rem;
+    font-family: 'Montserrat';
+    background-color: #000000;
+}
+/* Define o tamanha e cor do fundo do site */
+
+header {
+    background-color: #011322;
+    
+}
+/* Cor do cabeçalho */
+
+section {
+    padding-bottom: 5rem;
+}
+
+
+.nav-link {
+    color: #fafafa;
+    font-weight: 600;
+}
+/*Cor das opções do cabeçalho*/
+
+.inicio-fundo {
+   
+    background-image: url('img/billie5.jpg');
+    background-size: cover;
+    background-position: right;
+    border-radius: 80px;
+    width: 100%;
+    height: 606px;
+    padding: 40px;
+    margin: 0 auto;
+}
+/* Imagem principal do site, onde define o tamanho e margem */
+
+.img-inicio {
+    position: absolute;
+    right: 0;
+    top: 18rem;
+    width: 45rem;
+    height: auto;
+}
+
+
+.esquerda-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.container {
+
+    color: #ffffff;
+
+}
+
+.botao-inicio {
+    background-color: var(--laranja-claro);
+    border-radius: 30px;
+    border: none;
+    width: 14em;
+    height: 3em;
+    align-content: center;
+
+}
+/* Botão em cima da imagem principal, que muda de cor quando o cursor o toca*/
+
+
+.display-4 {
+    text-shadow: -5px 5px var(--laranja-claro);
+}
+/*Sombra dos textos chamativos*/
+
+
+#tropicalia {
+    position: relative;
+    padding-top: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background: 
+        url('img/billie2.jpg') bottom left no-repeat;
+    background-size: 390px 550px;
+    margin-left: 100px;
+    
+}
+/*Imagem da ecantora que fica na esquerda, na parte de baixo. Seleciona a quantida de px que ela tem que ficar da margem da esquerda*/
+
+#tropicalia .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+   
+}
+
+
+h2 {
+    font-family: 'Lemon', serif;
+    font-size: 2.5em;
+    font-style: normal;
+    color: white;
+}
+/*Tamanho títulos e cor */
+
+.p-2 {
+
+    color: white;
+}
+/*Cor textos*/
+
+#galeria {
+    background-color: #000000;
+
+}
+/*Cor de fundo da galeria*/
+
+
+#contato {
+    background-image: url('img/bluewallpaper.jpeg');
+    background-size: cover;
+    padding: 4rem 0;
+
+}
+/*Imagem de fundo da galeria*/
+
+.formulario {
+    background-color: #011322;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    
+}
+/*Cor, sombra e borda da estrutura do formulário*/
+
+.formulario button {
+    background-color: #1f3f6e;
+    border: none;
+    font-weight: bold;
+}
+/*Cor, tamanho e borda do botão do formulário*/
+
+.form-control {
+    background-color: #011c33;
+}
+
+.form-group mb-3 {
+
+    color: #ffffff;
+}
+
+.menu-acessibilidade{
+    position: fixed;
+    top:2rem;
+    right:20px;
+    z-index: 1000;
+}
+/*Fixa o botão de Acessibilidade, que corre com o decorrer do cursor*/
+
+.rotacao-botao{
+    transform: rotate(-90deg);
+    transform-origin: right center;
+}
+
+.opcoes-acessibilidade{
+    margin-top:10px;
+    display: flex;
+    flex-direction: column;
+}
+/*Opções que o botão apresenta após clicado*/
+
+
+.opcoes-acessibilidade button{
+    margin-bottom: 5px;
+}
+.apresenta-lista{
+    display: none;
+}
+
+/*Cores contrárias após o botão de contraste ser selecionado:*/
+
+
+.alto-contraste{
+    background-color: white;
+    color: var(--alto-contraste-texto);
+}
+
+.alto-contraste header,
+.alto-contraste footer,
+.alto-contraste .formulario{
+    background-color: #011322;
+    color: #1f3f6e;
+}
+
+.alto-contraste .nav-link{
+    color: var(--alto-contraste-link);
+}
+
+.alto-contraste .botao-inicio,
+.alto-contraste .formulario button,
+.alto-contraste .btn-primary{
+    background-color: #1f3f6e;
+    color: #ffffff;
+}
+
+.alto-contraste #tropicalia {
+    background: none;
+}
+
+.alto-contraste #galeria {
+    background-color: white;
+}
+.alto-contraste .fundo-galeria {
+    background: #ffffff;
+}
+
+.alto-contraste h2 {
+
+    color: black;
+}
+
+.alto-contraste .p-2 {
+
+    color: black;
+}
+
+.alto-contraste .formulario{
+
+    background-color: white;
+    color: #1f3f6e;
+
+}
+
+.alto-contraste #tropicalia{
+
+    background: 
+        url('img/blosh.png') bottom left no-repeat;
+        background-size: 390px 400px;
+    margin-left: 100px;
+}
+
+.alto-contraste #contato{
+
+    background-image: url('img/imagembranca.jpg');
+    background-size: cover;
+    padding: 4rem 0;
+}
+
+.form-group mb-3{
+
+    color: #ffffff;
+
+
+}
